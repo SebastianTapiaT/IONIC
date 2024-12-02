@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Escaneo QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Resultados del Escaneo -->
+  <ion-list>
+    <ion-item-divider>
+      <ion-label color="medium">Datos del QR Escaneado</ion-label>
+    </ion-item-divider>
+    <ion-item *ngIf="scannedDetails; else noResult">
+      <ion-icon name="checkmark-circle" slot="start" color="success"></ion-icon>
+      <ion-label>
+        <p><strong>Asignatura:</strong> {{ scannedDetails.subject }}</p>
+        <p><strong>Sección:</strong> {{ scannedDetails.section }}</p>
+        <p><strong>Sala:</strong> {{ scannedDetails.room }}</p>
+        <p><strong>Fecha:</strong> {{ scannedDetails.date }}</p>
+      </ion-label>
+    </ion-item>
+    <ng-template #noResult>
+      <ion-item>
+        <ion-icon name="information-circle" slot="start" color="warning"></ion-icon>
+        <ion-label color="medium">No se ha escaneado ningún código aún.</ion-label>
+      </ion-item>
+    </ng-template>
+  </ion-list>
+
+  <!-- Botón Flotante para Escanear -->
+  <div class="fab-container">
+    <ion-fab-button color="secondary" (click)="scan()">
+      <ion-icon name="qr-code-outline"></ion-icon>
+    </ion-fab-button>
+  </div>
+</ion-content>

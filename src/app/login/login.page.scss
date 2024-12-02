@@ -1,0 +1,57 @@
+
+ion-content {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100%;            
+}
+
+
+.login-container {
+  width: 90%; 
+  max-width: 500px; 
+  text-align: center; 
+  box-sizing: border-box; 
+  padding: 20px; 
+}
+
+
+ion-toolbar {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+
+ion-header ion-title {
+  text-align: center; 
+  margin: 0; 
+}
+
+
+.login-container h2 {
+  margin-top: 20px; 
+  font-size: 1.5em;
+  text-align: center; 
+}
+
+
+ion-item {
+  margin-bottom: 15px; 
+}
+
+
+ion-button {
+  margin-top: 10px; 
+}
+/* Alerta de éxito (verde) */
+.success-alert .alert-wrapper {
+  background-color: #d4edda; /* Verde claro */
+  color: #155724;          /* Texto verde oscuro */
+}
+
+/* Alerta de error (amarillo) */
+.error-alert .alert-wrapper {
+  background-color: #fff3cd; /* Amarillo claro */
+  color: #856404;           /* Texto amarillo oscuro */
+}

@@ -1,0 +1,50 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Aquí se colocan las reglas de estilo globales que se aplicarán a toda la app.
+ * 
+ * Incluiremos la imagen de fondo y eliminaremos los comentarios innecesarios.
+ */
+
+/* Establecer la imagen de fondo a nivel global */
+body {
+    background-image: url('assets/images/Rojo.jpg'); /* Ruta correcta de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina el padding */
+  }
+  
+  /* Core CSS required for Ionic components to work properly */
+  @import "@ionic/angular/css/core.css";
+  
+  /* Basic CSS for apps built with Ionic */
+  @import "@ionic/angular/css/normalize.css";
+  @import "@ionic/angular/css/structure.css";
+  @import "@ionic/angular/css/typography.css";
+  @import "@ionic/angular/css/display.css";
+  
+  /* Optional CSS utils that can be commented out */
+  @import "@ionic/angular/css/padding.css";
+  @import "@ionic/angular/css/float-elements.css";
+  @import "@ionic/angular/css/text-alignment.css";
+  @import "@ionic/angular/css/text-transformation.css";
+  @import "@ionic/angular/css/flex-utils.css";
+  
+  /* Ionic Dark Mode (si decides usarlo) */
+  @import "@ionic/angular/css/palettes/dark.system.css";
+  /* Alerta de éxito (verde) */
+.success-alert .alert-wrapper {
+  background-color: #d4edda !important; /* Verde claro */
+  color: #155724 !important;           /* Texto verde oscuro */
+  border-radius: 10px;                 /* Opcional: bordes redondeados */
+}
+
+/* Alerta de error (amarillo) */
+.error-alert .alert-wrapper {
+  background-color: #fff3cd !important; /* Amarillo claro */
+  color: #856404 !important;           /* Texto amarillo oscuro */
+  border-radius: 10px;                 /* Opcional: bordes redondeados */
+}
